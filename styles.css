@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Oxanium:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*
+{
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+       
+}
+body
+{
+    margin: 0;
+    background-color: #222222;
+}
+main
+{   
+    display: flex;
+    opacity: 0;
+    margin: 0;
+}
+#welcome
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+#intro
+{
+    font-size: 3em;
+    color: whitesmoke;
+      
+}
+
+header
+{
+    padding: 2% 1% 2% 4%;
+    font-size: 1em;
+    width: 30%;
+    height: 100vh;
+    border: 0px solid black;
+    margin: 0;
+    box-shadow: 0 0 0px black ;
+    color: whitesmoke;
+
+}
+header h2
+{
+    font-size: 1.8em;
+}
+header p
+{
+    font-size: 1.3em;
+}
+header h1
+{
+    font-size: 2.2em;
+}
+.post
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0px dotted black;
+    margin: 3%;
+    box-shadow: 0 0 15px;
+    color: whitesmoke;
+    border-radius: 15px;
+
+    transition: 0.5s;
+}
+.post:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 2px white;
+}
+.post img
+{
+    width: 50%;
+    margin-top: 5%;
+}
+
+nav
+{
+    justify-content: center;
+    padding: 3%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+}
+
+
+
+
+@keyframes fadeAnimation {
+    0% {opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes mainload {
+    100% {opacity :1;}
+    0% {opacity: 0;}
+}
+

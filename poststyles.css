@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Oxanium:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*
+{
+    box-sizing: border-box;
+    font-family: "Rubix", sans-serif;
+}
+body
+{
+    margin: 0;
+    display: flex;
+}
+nav
+{
+    width: 30%;
+    max-height: 100vh;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2%;
+}
+.post
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px dotted black;
+    margin: 3%;
+    box-shadow: 0 0 15px;
+    
+    border-radius: 15px;
+    max-height: 25vh;
+
+    transition: 0.5s;
+}
+.post:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 2px white;
+}
+.post img
+{
+    width: 20%;
+    margin-top: 5%;
+}
+
+main
+{
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+}
+main img
+{
+    max-width: 50%;
+    margin: 2%;
+}
