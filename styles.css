@@ -11,12 +11,21 @@ body
 {
     margin: 0;
     background-color: #222222;
-}
-main
-{   
     display: flex;
-    opacity: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12vh;
     margin: 0;
+    color: whitesmoke;
+    box-shadow: 0 0 10px black;
+   
 }
 #welcome
 {
@@ -28,6 +37,7 @@ main
     height: 100%;
     width: 100%;
     position: fixed;
+    
 }
 #intro
 {
@@ -36,29 +46,30 @@ main
       
 }
 
-header
+main
 {
     padding: 2% 1% 2% 4%;
     font-size: 1em;
     width: 30%;
-    height: 100vh;
+    height: 88vh;
     border: 0px solid black;
     margin: 0;
     box-shadow: 0 0 0px black ;
     color: whitesmoke;
+    
 
 }
-header h2
+main h2
 {
     font-size: 1.8em;
 }
-header p
+main p
 {
     font-size: 1.3em;
 }
 header h1
 {
-    font-size: 2.2em;
+    font-size: 2.5em;
 }
 .post
 {
@@ -66,23 +77,25 @@ header h1
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    border: 0px dotted black;
-    margin: 3%;
+    text-align: center;    
     box-shadow: 0 0 15px black;
     color: whitesmoke;
     border-radius: 15px;
-
     transition: 0.5s;
+
+    cursor: pointer;
+
 }
 .post:hover
 {
     transform: scale(1.05);
-    box-shadow: 0 0 15px 2px white;
+    box-shadow: 0 0 10px 2px white;
 }
+
 .post img
 {
-    width: 50%;
+    max-width: 40%;
+    border-radius: 10px;
     margin-top: 5%;
 }
 
@@ -90,21 +103,55 @@ nav
 {
     justify-content: center;
     padding: 3%;
-    width: 70%;
+    max-width: 70%;
+    height: 88vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2%;
+    gap: 4%;
 }
 
 
 
+@media screen and (max-width: 1024px)
+{
 
-@keyframes fadeAnimation {
-    0% {opacity: 1;}
-    100%{opacity: 0;}
-}
-@keyframes mainload {
-    100% {opacity :1;}
-    0% {opacity: 0;}
-}
 
+    body
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main
+    {
+        width: 100%;
+        max-height: 18vh;
+    }
+    
+   
+    nav
+    {
+        max-width: 100%;
+        max-height: 70vh;
+    }
+
+}
+@media screen and (max-width: 768px)
+{
+    header h1
+    {
+        font-size: 2em;
+        max-height: 12vh;
+    }
+    main
+    {
+        font-size: 0.7em;
+        max-height: 28vh;
+    }
+    nav
+    {
+        max-height: 60vh;
+        padding: 5%;
+        gap: 5%;
+    }
+}
