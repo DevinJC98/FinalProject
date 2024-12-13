@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baumans&family=Oxanium:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
 *
 {
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
 }
+
 body
 {
     background-color: #222222;
@@ -13,6 +13,7 @@ body
     display: flex;
     flex-wrap: wrap;
 }
+
 header
 {
     display: flex;
@@ -23,13 +24,14 @@ header
     height: 12vh;
     margin: 0;
     color: whitesmoke;
-    box-shadow: 0 0 10px black;
-   
+    box-shadow: 0 0 10px black; 
 }
+
 header h1
 {
     font-size: 2.5em;
 }
+
 nav
 {
     animation-name: fadein;
@@ -43,6 +45,7 @@ nav
     padding: 2%;
     gap:2%;
 }
+
 .post
 {
     display: flex;
@@ -58,6 +61,7 @@ nav
     transition: 0.5s;
     cursor: pointer;
 }
+
 .post:hover
 {
     transform: scale(1.05);
@@ -70,7 +74,7 @@ nav
     margin: 5%;
 }
 
-video
+#vid
 {
     max-width: 80%;
     margin: 0;
@@ -94,14 +98,20 @@ main
     box-shadow: 0 0 0px black;
     border-radius: 25px;
     margin: 2%;
-    color: whitesmoke;
-    
-    
+    color: whitesmoke;    
 }
+
+main h2
+{
+    font-size: 1.5em
+}
+
 main p
 {
+    font-size: 1em;
     max-width: 80%;
 }
+
 main img
 {
     max-width: 60%;
@@ -109,16 +119,13 @@ main img
     border-radius: 15px;
     box-shadow:  0px 0px 15px black;
     transition: 0.5s;
-    
 }
 
 main img:hover
 {
     scale: 1.05;
     box-shadow: 0px 0px 15px 5px black;
-
 }
-
 
 @media screen and (max-width: 1024px)
 {
@@ -131,7 +138,6 @@ main img:hover
     body
     {
         display: flex;
-        
     }
 
     main
@@ -141,16 +147,18 @@ main img:hover
         max-height: 55vh;
         margin: 1%;
         padding: 2%;
-        
-    }    
+    }   
+
     main img
     {
         max-width: 60%;
     }
+
     main h2
     {
         font-size: 1.4em;
     }
+
     main p
     {
         font-size: 0.8em;
@@ -165,11 +173,13 @@ main img:hover
         height: 30vh;
         gap: 5%;
     }
+
     .post
     {
         max-height: 12vh;
         font-size: 0.8em;
     }
+
     .post img
     {
         width: 15%;
@@ -183,10 +193,12 @@ main img:hover
     {
         font-size: 1.5em;
     }
+
     .post
     {
         font-size: 0.6em;
     }
+    
     main img
     {
         max-width: 80%;

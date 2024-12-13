@@ -4,9 +4,9 @@
 *
 {
     box-sizing: border-box;
-    font-family: "Rubik", sans-serif;
-       
+    font-family: "Rubik", sans-serif;  
 }
+
 body
 {
     margin: 0;
@@ -15,6 +15,7 @@ body
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 header
 {
     display: flex;
@@ -26,9 +27,12 @@ header
     margin: 0;
     color: whitesmoke;
     box-shadow: 0px 0px 5px black;
-   
 }
 
+header h1
+{
+    font-size: 2.5em;
+}
 
 main
 {
@@ -38,21 +42,18 @@ main
     height: 88vh;
     margin: 0;
     color: whitesmoke;
-    
-
 }
+
 main h2
 {
     font-size: 1.5em;
 }
+
 main p
 {
     font-size: 1.2em;
 }
-header h1
-{
-    font-size: 2.5em;
-}
+
 .post
 {
     display: flex;
@@ -67,8 +68,8 @@ header h1
     border-radius: 15px;
     transition: 0.5s;
     cursor: pointer;
-
 }
+
 .post:hover
 {
     transform: scale(1.05);
@@ -94,11 +95,8 @@ nav
 }
 
 
-
 @media screen and (max-width: 1024px)
 {
-
-
     body
     {
         display: flex;
@@ -117,10 +115,12 @@ nav
         height: fit-content;
         max-height: 40vh;
     }
+
     main h2
     {
         font-size: 1.3em;
     }
+
     main p
     {
         font-size: 1em;
@@ -133,36 +133,42 @@ nav
         max-height: 5vh;
         padding: 2%;
     }
+
     .post h2
     {
         font-size: 0.9em;
     }
-
 }
+
 @media screen and (max-width: 768px)
 {
     header
     {
         font-size: 0.5em;
     }
+
     main
     {
             max-height: 30vh;
     }
+
     main h2
     {
         font-size: 0.9em;
     }
+
     main p
     {
         font-size: 0.7em;
     }
+
     nav
     {
         max-height: 60vh;
         padding: 5%;
         gap: 5%;
     }
+    
     .post h2
     {
         font-size: 0.75em;

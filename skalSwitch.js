@@ -1,6 +1,5 @@
 document.getElementById("skalTavern").addEventListener("mouseenter", function()
 {
-   console.log("why?")
     let carousel = ["Images/skal.jpg", "Images/skalIcons.jpg", "Images/skalAssets.jpg"]   
     let picCounter = 0;
     
